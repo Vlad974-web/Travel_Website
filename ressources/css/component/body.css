@@ -1,0 +1,68 @@
+.home {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #2696E9;
+}
+
+.home .content {
+  z-index: 888;
+  color: #fff;
+  width: 70%;
+  /* margin-top: 10px; */
+}
+
+.home .content h1{
+  font-size: 4em;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 75px;
+  margin-bottom: 40px;
+}
+
+.home .content h1 span {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.home .content p {
+  margin-bottom: 30px;
+}
+
+.home .content a {
+  background: #fff;
+  padding: 15px 35px;
+  color: #1680AC;
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 50px;
+}
+
+/* Icons */
+.home .icons {
+  z-index: 888;
+  position: absolute;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s ease;
+}
+
+.home .icons a {
+  color: #fff;
+  font-size: 1.6em;
+  transition: 0.3s ease;
+}
+
+.home .icons a:not(:last-child){
+  margin-bottom: 20px;
+}
+
+.home .icons a:hover{
+  transform: scale(1.3);
+}
