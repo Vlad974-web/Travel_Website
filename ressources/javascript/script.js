@@ -2,6 +2,7 @@ const menuBtn = document.querySelector('.menu-btn');
 const navigation = document.querySelector('.navigation');
 const btns = document.querySelectorAll('.nav-btn');
 const slides = document.querySelectorAll('.video-slide');
+const contents = document.querySelectorAll('.content');
 
 // Pour le menu
 menuBtn.addEventListener('click', () => {
@@ -20,9 +21,14 @@ menuBtn.addEventListener('click', () => {
       slide.classList.remove('active');
     })
 
+    contents.forEach((content) => {
+      content.classList.remove('active');
+    })
+
     // Mettre couleur sur slide
   btns[manual].classList.add('active');
   slides[manual].classList.add('active');
+  contents[manual].classList.add('active');
 };
 
 btns.forEach((btn, i) => {

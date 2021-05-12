@@ -24,6 +24,11 @@
   color: #fff;
   width: 70%;
   /* margin-top: 10px; */
+  display: none;
+}
+
+.home .content.active {
+  display: block;
 }
 
 .home .content h1{
@@ -98,9 +103,10 @@
 .video-slide.active {
   clip-path: circle(150% at 0 50%);
   transition: 2s ease;
+  transition-property: clip-path;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1050px) {
   section {
     padding: 100px 20px;
   }
