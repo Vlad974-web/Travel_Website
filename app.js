@@ -7,6 +7,9 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 
+// DotENV
+require('dotenv').config();
+
 
 // EJS
 app.set('view engine', 'ejs');
