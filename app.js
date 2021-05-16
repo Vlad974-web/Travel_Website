@@ -5,7 +5,7 @@ const app = express();
 
 // Middleware -> BodyParser
 app.use(express.json());
-app.use(express.urlencoded({extended: false}))
+app.use(express.urlencoded({extended: false}));
 
 
 // EJS
