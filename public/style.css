@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:whgt');
+/* DOCUMENT INFORMATION 
+    -Document: file
+    -Version: 1.0.0
+    -Author: Vlad
+*/
+
+/* COLORS */
+/* FONTS */
+/* CSS DIRECTORY */
+@import url('component/global.css');
+@import url('component/navbar.css');
+@import url('component/body.css');
+@import url('component/slider.css');
