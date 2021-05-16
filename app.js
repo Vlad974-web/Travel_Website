@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const mysql = require('mysql');
+const util = require('util');
 const app = express();
 
 
@@ -28,6 +29,8 @@ connection.connect(
     console.log('Connecté au serveur MySQL');
   }
 )
+// DECLARER LA VARIABLE LOCAL QUERY SQL
+global.querysql = util.promisify(connection.query).bind(connection);
 
 // EJS
 app.set('view engine', 'ejs');
